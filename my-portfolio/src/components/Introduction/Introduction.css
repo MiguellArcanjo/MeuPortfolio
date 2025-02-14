@@ -1,0 +1,47 @@
+.container-Introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* margin-top: 10px; */
+}
+
+.containerTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.containerBottom {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.highlight-text {
+    color: #482F68;
+}
+
+.containerLeft h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #22004B;
+}
+
+.containerLeft p {
+    font-size: 1.8rem;
+    font-weight: 200;
+    color: #22004B;
+}
+
+.containerLeft h1, .containerLeft p {
+    color: #22004B;
+}
+
+.containerButtonsIntroduction {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    right: 5px;
+}
