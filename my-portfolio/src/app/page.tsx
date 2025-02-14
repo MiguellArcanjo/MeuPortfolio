@@ -1,6 +1,7 @@
 import "./page.css"
 import { Nav } from "@/components/Nav/nav";
 import { Introduciton } from "@/components/Introduction/Introduction";
+import { AboutMe } from "@/components/AboutMe/aboutMe";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
 
       <main>
         <Introduciton />
+        <AboutMe />
       </main>
     </div>
   );

@@ -9,7 +9,9 @@ export function Nav() {
                 <span className="stripeBottom"></span>
             </div>
             <h1>Miguel Arcanjo - Dev Front-End</h1>
-            <div className="buttonChangeColorBg"></div>
+            <div className="buttonChangeColorBg">
+                <div className="ballChangeColor"></div>
+            </div>
         </nav>
     )
 }
