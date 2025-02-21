@@ -20,8 +20,10 @@ export function Introduciton() {
                     <Image src="/myPicture.svg" alt="My Picture" height={400} width={400}/>
                 </div>
             </div>
-            <div className="containerBottom"> 
-                <Image src="/arrowIcon.svg" alt="Icon arrow" height={50} width={50}/>
+            <div className="containerBottom">
+                <a href="#aboutMe">
+                    <Image src="/arrowIcon.svg" alt="Icon arrow" height={50} width={50} className="arrow"/>
+                </a> 
             </div>
         </section>
     )

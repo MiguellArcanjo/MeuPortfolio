@@ -45,3 +45,40 @@
     position: relative;
     right: 5px;
 }
+
+.containerBottom img {
+    transition: .9s;
+    animation: pusle infinite .9s;
+}
+
+
+@keyframes pusle {
+    from {
+        transition: .9s;
+        transform: scale(1.1);
+    }
+}
+
+@media (min-width: 1500px) {
+    .containerLeft h1 {
+        font-size: 3.5rem;
+    }
+
+    .containerLeft p {
+        font-size: 2rem;
+    }
+
+    .containerTop {
+        margin-top: 100px;
+    }
+
+    .containerBottom {
+        padding: 50px;
+        margin-top: 90px;
+    }
+
+    .containerBottom img {
+        height: 70px;
+        width: 70px;
+    }
+}
