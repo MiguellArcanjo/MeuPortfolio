@@ -1,4 +1,4 @@
-.left {
+.left, .dark-modeleft {
     height: 38px;
     width: 2px;
     right: 190px;
@@ -6,7 +6,7 @@
     display: block;
 }
 
-.top {
+.top, .dark-modeTop {
     height: 2px;
     width: 230.3px;
     right: -39px;
@@ -14,7 +14,7 @@
     display: block;
 }
 
-.bottom {
+.bottom, .dark-modeBottom {
     height: 2px;
     width: 180px;
     right: 12px;
@@ -22,7 +22,7 @@
     display: block;
 }
 
-.right {
+.right, .dark-modeRight {
     height: 65px;
     width: 2px;
     right: -14px;
@@ -32,17 +32,17 @@
     transform: rotate(54deg);
 }
 
-.leftFforLeft {
+.leftFforLeft, .dark-modeleftForLeft {
     height: 65px;
     width: 2px;
     right: 200px;
     top: 0px;
     display: block;
-    /* border-radius: 30px; */
     transform: rotate(54deg);
 }
 
-.topForLeft {
+
+.topForLeft, .dark-modeTopForLeft {
     height: 2px;
     width: 189.4px;
     right: -13.6px;
@@ -51,7 +51,7 @@
     border-radius: 50px;
 }
 
-.bottomForLeft {
+.bottomForLeft, .dark-modeBottomForLeft {
     height: 2px;
     width: 239.8px;
     right: -13px;
@@ -59,7 +59,7 @@
     display: block;
 }
 
-.rightForLeft {
+.rightForLeft, .dark-modeRightForLeft {
     height: 38.5px;
     width: 2px;
     right: -13.6px;
@@ -68,6 +68,16 @@
 }
 
 .containerButton {
+    position: relative;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+
+.dark-modeContainerButton {
     position: relative;
     padding: 20px;
     width: 200px;
@@ -88,10 +98,30 @@
     z-index: 1;
 }
 
+.dark-modeContainerButtonForLeft {
+    position: relative;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+    top: -1px;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+
 .containerButton p {
     font-size: 1rem;
     font-weight: bold;
     color: #22004B;
+    transition: color 0.3s ease;
+    position: relative; 
+    z-index: 3;
+}
+
+.dark-modeContainerButton p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
     transition: color 0.3s ease;
     position: relative; 
     z-index: 3;
@@ -107,9 +137,27 @@
     transition: color 0.3s ease;
 }
 
+.dark-modeContainerButtonForLeft p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    position: relative;
+    left: 6px;
+    top: 2px;
+    transition: color 0.3s ease;
+}
+
 .left, .top, .bottom, .right,
 .leftFforLeft, .topForLeft, .bottomForLeft, .rightForLeft {
     background-color: #22004B;
+    position: absolute;
+    z-index: 2;
+}
+
+.dark-modeleft, .dark-modeTop, .dark-modeBottom,
+.dark-modeRight, .dark-modeleftForLeft, .dark-modeTopForLeft,
+.dark-modeBottomForLeft, .dark-modeRightForLeft {
+    background-color: #fff;
     position: absolute;
     z-index: 2;
 }
