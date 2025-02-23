@@ -4,7 +4,22 @@
     padding: 30px;
 }
 
+.dark-modeContainer-contact {
+    width: 100%;
+    margin-top: 10px;
+    padding: 30px;
+}
+
 .titleContact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    text-align: end;
+    justify-content: end;
+}
+
+.dark-modeContainer-contact .titleContact {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -20,6 +35,22 @@
     font-size: 40px;
     margin-left: 10px;
     margin-bottom: 5px;
+}
+
+.dark-modeContainer-contact .titleContact h2 {
+    color: #FFF;
+    font-weight: bold;
+    position: relative;
+    font-size: 40px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.dark-modeContainer-contact .squareWhite {
+    height: 27px;
+    width: 27px;
+    border: 1.5px solid #fff;
+    border-radius: 2px;
 }
 
 .squareWhite {
@@ -41,6 +72,18 @@
     flex-grow: 1
 }
 
+.dark-modeContainer-contact .lineContact {
+    height: 2px;
+    background-color: #Fff;
+    opacity: 25%;
+    width: 1000px;
+    display: block;
+    position: absolute;
+    right: 200px;
+    bottom: 7px;
+    flex-grow: 1
+}
+
 .testeIcon {
     display: flex;
     flex-direction: column;
@@ -50,6 +93,10 @@
     color: #22004B;
     font-weight: bold;
     font-size: 20px;
+}
+
+.dark-modeContainer-contact .testeIcon {
+    color: #FFF;
 }
 
 .containerContacts {
@@ -62,6 +109,10 @@
 
 @media (min-width: 1500px) {
     .lineContact {
+        width: 1550px;
+    }
+
+    .dark-modeContainer-contact .lineContact {
         width: 1550px;
     }
 }

@@ -1,9 +1,12 @@
 import AliceCarousel from "react-alice-carousel";
 import { CardProject } from "../CardProject/cardProject";
+import { useTheme } from "@/Context/ThemeContext.js"
 import "./project.css";
 import 'react-alice-carousel/lib/alice-carousel.css';
 
 export function Project() {
+    const { isDarkMode } = useTheme();
+
     const items = [
         <CardProject 
             nome="Nome do Projeto" 
@@ -16,7 +19,7 @@ export function Project() {
       ];
 
     return (
-        <section className="container-projects">
+        <section className={`${isDarkMode ? "dark-modeContainer-projects" : "container-projects"}`}>
             <div className="titleProject">
                 <div className="squarePurple"></div>
                 <div className="squarePurple"></div>

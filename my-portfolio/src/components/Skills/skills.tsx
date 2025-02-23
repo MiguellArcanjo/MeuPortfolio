@@ -1,19 +1,37 @@
-import "./skills.css";
 import Image from "next/image";
+import { useTheme } from "@/Context/ThemeContext.js"
+import "./skills.css";
 
 export function Skills() {
+    const { isDarkMode } = useTheme();
+
     return (
         <section className="container-skills">
-            <div className="titleSkills">
+            <div className={`${isDarkMode ? "dark-modeTitleSkills" : "titleSkills"}`}>
                 <h2>Habilidades <span className="lineSkills"></span></h2>
-                <div className="squarePurple"></div>
-                <div className="squareWhite">
-                    <div className="purple"></div>
-                    <div className="white"></div>
-                </div>
+                {isDarkMode ?  (
+                    <>
+                        <div className="squarePurple">
+                            <div className="white"></div>
+                        </div>
+                        <div className="squareWhite"></div>
+                    </>
+                )
+                
+                : 
+                    <>
+                        <div className="squarePurple"></div>
+                        <div className="squareWhite">
+                            <div className="purple"></div>
+                            <div className="white"></div>
+                        </div>
+                    </>
+
+                }
+                
             </div>
 
-            <div className="skillsIcon">
+            <div className={`${isDarkMode ? "dark-modeSkillsIcon" : "skillsIcon"}`}>
                 <div>
                     <div className="icon">
                         <Image src={"/html.svg"} alt="Icone Html" height={130} width={130}/>
