@@ -4,7 +4,10 @@
     height: 660px;
     margin: 0 auto;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
     overflow: hidden; 
+    transition: all 0.5s ease; 
 }
 
 .teste {
@@ -12,19 +15,42 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-bottom: 18px solid #482F68;
+    border-bottom: 18px solid #22004B;
+    border-radius: 20px 20px 20px 20px;
+    transition: .5s;
+    z-index: 3;
 }
 
+.testeDark {
+    background-image: url("/Pagina principal.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom: 18px solid #fff;
+    border-radius: 20px 20px 20px 20px;
+    transition: .5s;
+    z-index: 3;
+}
 
 .cardProject::before {
     content: ""; 
     position: absolute;
-    left: -12px;
-    width: 110%;
+    width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.85); 
-    border-radius: 20px;
+    border-radius: 20px 20px 0 0;
     z-index: 1; 
+    transition: .5s;
+}
+
+.cardProject:hover::before {
+    background-color: rgba(0, 0, 0, 0); 
+    transition: .5s;
+}
+
+.cardProject:hover .icons {
+    display: none;
+    transition: .5s;
 }
 
 .cardProject h3 {
@@ -43,6 +69,69 @@
     flex-direction: column;
     margin: 0 auto;
     z-index: 2;
+    transition: .5s;
+}
+
+.overlayHover {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 70%;
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    width: 100%; 
+    height: 50px;
+    background-color: #22004b; 
+    color: white; 
+    text-align: center;
+    /* padding: 10px; */
+    transform: translateY(150%); 
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 2;
+    border-radius: 0 0 20px 20px;
+}
+
+.dark-modeOverlayHover {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 70%;
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    width: 100%; 
+    height: 50px;
+    background-color: #fff; 
+    color: #22004B; 
+    text-align: center;
+    /* padding: 10px; */
+    transform: translateY(150%); 
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 2;
+    border-radius: 0 0 20px 20px;
+}
+
+.cardProject:hover .overlayHover {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    border-radius: 0 0 20px 20px;
+    transform: translateY(0);;
+}
+
+.cardProject:hover .dark-modeOverlayHover {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    border-radius: 0 0 20px 20px;
+    transform: translateY(0);;
+}
+
+.teste:hover {
+    border: none;
+    transition: .5s;
+}
+
+.testeDark:hover {
+    border: none;
+    transition: .5s;
 }
 
 .icons div {
@@ -50,8 +139,14 @@
     gap: 20px;
 }
 
-
 .svg-color {
     filter: brightness(3) invert(0) ; 
+}
+
+.verMais {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
   

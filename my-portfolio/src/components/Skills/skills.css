@@ -185,6 +185,12 @@
     color: #fff;
 }
 
+.dark-modeSkillsIcon .icon:hover p {
+    opacity: 1;
+    color: #22004B;
+    font-weight: bold;
+}
+
 
 .dark-modeSkillsIcon .icon img {
     filter: brightness(0) invert(1); 
@@ -203,6 +209,16 @@
 
 .icon:hover img {
     filter: brightness(0) invert(1); 
+}
+
+.dark-modeSkillsIcon .icon:hover img {
+    filter: none; 
+}
+
+.dark-modeSkillsIcon .icon:hover {
+    background-color: #fff; 
+    transform: scale(1.1);
+    transition: .5s ;
 }
 
 @media (min-width: 1500px) {

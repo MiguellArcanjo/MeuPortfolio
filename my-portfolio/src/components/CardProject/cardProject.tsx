@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useTheme } from "@/Context/ThemeContext.js"
 import "./cardProject.css";
 
 interface CardProjectProps {
@@ -11,6 +12,8 @@ interface CardProjectProps {
 }
 
 export function CardProject(props: CardProjectProps) {
+    const { isDarkMode } = useTheme();
+
     return (
         <div className={`cardProject ${props.imgBackGround}`}>
             <div className="icons">
@@ -37,6 +40,13 @@ export function CardProject(props: CardProjectProps) {
                 </div>
                 <div>
                     <h3>{props.nome}</h3>
+                </div>
+            </div>
+            <div className={`${isDarkMode ? "dark-modeOverlayHover" : "overlayHover"}`}>
+                <div>25 de Abril / 2024</div>
+                <div className="verMais">
+                    Ver mais
+                    <Image src={"/playIcon.svg"} alt="Icone de play" height={20} width={20}/>
                 </div>
             </div>
         </div>
