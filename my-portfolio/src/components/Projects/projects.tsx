@@ -29,7 +29,7 @@ export function Project() {
       ];
 
     return (
-        <section className={`${isDarkMode ? "dark-modeContainer-projects" : "container-projects"}`}>
+        <section className={`${isDarkMode ? "dark-modeContainer-projects" : "container-projects"}`} id="projetos">
             <div className="titleProject">
                 <div className="squarePurple"></div>
                 <div className="squarePurple"></div>

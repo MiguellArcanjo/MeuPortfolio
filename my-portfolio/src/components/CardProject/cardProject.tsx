@@ -46,7 +46,7 @@ export function CardProject(props: CardProjectProps) {
                 <div>25 de Abril / 2024</div>
                 <div className="verMais">
                     Ver mais
-                    <Image src={"/playIcon.svg"} alt="Icone de play" height={20} width={20}/>
+                    <Image src={isDarkMode ? "/iconMenuPlay.svg" : "/playIcon.svg"} alt="Icone de play" height={20} width={20}/>
                 </div>
             </div>
         </div>

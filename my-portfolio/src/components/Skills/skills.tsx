@@ -6,7 +6,7 @@ export function Skills() {
     const { isDarkMode } = useTheme();
 
     return (
-        <section className="container-skills">
+        <section className="container-skills" id="skills"> 
             <div className={`${isDarkMode ? "dark-modeTitleSkills" : "titleSkills"}`}>
                 <h2>Habilidades <span className="lineSkills"></span></h2>
                 {isDarkMode ?  (
