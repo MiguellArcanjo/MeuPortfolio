@@ -5,18 +5,24 @@ interface LineMenuProps {
     icon: string;
     nome: string;
     href?: string;
+    closeMenu: () => void;
 }
+
+interface MenuBarProps {
+    closeMenu: () => void;
+}
+
 
 const LineMenu = (props: LineMenuProps) => {
     return (
-        <a href={props.href} className="lineMenu">
+        <a href={props.href} className="lineMenu" onClick={props.closeMenu}>
             <Image src={props.icon} alt="Icones do menu" height={23} width={23}/>
             {props.nome}
         </a>
     )
 }
 
-export function MenuBar() {
+export function MenuBar({ closeMenu }: MenuBarProps) {
     return (
         <div>
             <div className="menuHeader">
@@ -29,12 +35,12 @@ export function MenuBar() {
                 </div>
             </div>
             <ul>
-                <LineMenu icon="/iconMenuSobre.svg" nome="Sobre Mim" href="#aboutMe"/>
-                <LineMenu icon="/iconMenuPlay.svg" nome="Habilidades" href="#skills"/>
-                <LineMenu icon="/iconMenuProjetos.svg" nome="Projetos" href="#projetos"/>
-                <LineMenu icon="/iconMenuLinkedin.svg" nome="LinkedIn"/>
-                <LineMenu icon="/iconMenuGithub.svg" nome="GitHub"/>
-                <LineMenu icon="/iconMenuTelefone.svg" nome="Telefone"/>
+                <LineMenu icon="/iconMenuSobre.svg" nome="Sobre Mim" href="#aboutMe" closeMenu={closeMenu}/>
+                <LineMenu icon="/iconMenuPlay.svg" nome="Habilidades" href="#skills" closeMenu={closeMenu}/>
+                <LineMenu icon="/iconMenuProjetos.svg" nome="Projetos" href="#projetos" closeMenu={closeMenu}/>
+                <LineMenu icon="/iconMenuLinkedin.svg" nome="LinkedIn" closeMenu={closeMenu}/>
+                <LineMenu icon="/iconMenuGithub.svg" nome="GitHub" closeMenu={closeMenu}/>
+                <LineMenu icon="/iconMenuTelefone.svg" nome="Telefone" closeMenu={closeMenu}/>
                 <div />
                 <div className="footerMenu">
                     <Image src={"/sobreTema.svg"} alt="Icone Sobre o tem" height={23} width={23}/>
