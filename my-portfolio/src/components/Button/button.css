@@ -278,3 +278,7 @@
     color: #22004B; 
     z-index: 1;
 }
+
+.contatoButton {
+    text-decoration: none;
+}

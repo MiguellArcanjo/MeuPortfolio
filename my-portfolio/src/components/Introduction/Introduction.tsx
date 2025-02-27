@@ -15,8 +15,8 @@ export function Introduciton() {
                     <h1>meu <span className={isDarkMode ? "dark-modeHighlight-text" : "highlight-text"}>Portfólio</span>. {"< / >"} </h1>
                     <p>Miguel Arcanjo - Dev Front-End</p>
                     <div className="containerButtonsIntroduction">
-                        <ButtonForRight />
-                        <ButtonForLeft />
+                        <ButtonForRight nome="Entre em contato"/>
+                        <ButtonForLeft nome="Baixe meu currículo"/>
                     </div>
                 </div>
 

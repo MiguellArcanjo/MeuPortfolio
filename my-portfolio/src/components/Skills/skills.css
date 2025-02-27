@@ -86,7 +86,7 @@
     height: 2px;
     background-color: #482F68;
     opacity: 25%;
-    width: 1000px;
+    width: 970px;
     display: block;
     position: absolute;
     right: 240px;
@@ -221,6 +221,13 @@
     transition: .5s ;
 }
 
+@media (max-width: 1400px) {
+    .icon img {
+        height: 120px;
+        width: 120px;
+    }
+}
+
 @media (min-width: 1500px) {
     .lineSkills {
         width: 1500px;
@@ -239,3 +246,4 @@
     }
     
 }
+
