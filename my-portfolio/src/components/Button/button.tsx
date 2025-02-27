@@ -4,6 +4,8 @@ import "./button.css"
 
 interface ButtonsProps {
     nome: string;
+    urlRepositorio?: string;
+    urlProjeto?: string;
 }
 
 export function ButtonForRight(props: ButtonsProps) {
@@ -46,5 +48,41 @@ export function ButtonForLeft(props: ButtonsProps) {
                 <p>{props.nome}</p>
             </div>
         </div>
+    )
+}
+
+export function ButtonForRightProject(props: ButtonsProps) {
+    const { isDarkMode } = useTheme();
+
+    return (
+        <a href={props.urlRepositorio} className="" target="blank_">
+            <div className="dark-modeContainerButton">
+                <div className="bgButton">
+                    <span className="dark-modeleft"></span>
+                    <span className="dark-modeTop"></span>
+                    <span className="dark-modeBottom"></span>
+                    <span className="dark-modeRight"></span>
+                    <p>{props.nome}</p>
+                </div>
+            </div>
+        </a>
+    )
+}
+
+export function ButtonForLeftProject(props: ButtonsProps) {
+    const { isDarkMode } = useTheme(); 
+
+    return (
+        <a href={props.urlProjeto} target="blank_">
+            <div className="OverlayContainerButtonForLeft">
+                <div className="bgButton">
+                    <span className="dark-modeleftForLeft"></span>
+                    <span className="dark-modeTopForLeft"></span>
+                    <span className="dark-modeBottomForLeft"></span>
+                    <span className="dark-modeRightForLeft"></span>
+                    <p>{props.nome}</p>
+                </div>
+            </div>
+        </a>
     )
 }

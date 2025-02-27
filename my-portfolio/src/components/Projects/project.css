@@ -82,11 +82,149 @@
 @media (min-width: 1500px) {
     .lineProject {
         width: 1550px;
- 
     }
 
     .dark-modeContainer-projects .lineProject  {
         width: 1550px;
     }
     
+}
+
+@media (max-width: 1400px) {
+    .lineProject {
+        width: 920px;
+    }
+    
+    .dark-modeContainer-projects .lineProject  {
+        width: 920px;
+    }
+
+    .dark-modeTitleAboutMe h2 span {
+        width: 900px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .lineProject {
+        width: 750px;
+    }
+    
+    .dark-modeContainer-projects .lineProject  {
+        width: 750px;
+    }
+
+    .dark-modeTitleAboutMe h2 span {
+        width: 900px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .lineProject {
+        width: 660px;
+    }
+    
+    .dark-modeContainer-projects .lineProject  {
+        width: 660px;
+    }
+
+    .dark-modeTitleAboutMe h2 span {
+        width: 900px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .lineProject {
+        width: 550px;
+    }
+
+    .dark-modeContainer-projects .lineProject  {
+        width: 550px;
+    }
+    
+
+    .dark-modeTitleAboutMe h2 span {
+        width: 580px;
+    }
+}
+
+@media (max-width: 900px) {
+    .lineProject {
+        width: 540px;
+        left: 130px;
+    }
+
+    .dark-modeContainer-projects .lineProject  {
+        width: 540px;
+        left: 130px;
+    }
+    
+    .titleProject h2 {
+        font-size: 30px;
+    }
+    
+    .dark-modeContainer-projects .titleProject h2 {
+        font-size: 30px;
+    }
+
+    .dark-modeContainer-projects .titleProject h2 {
+        font-size: 30px;
+    }
+
+}
+
+
+@media (max-width: 800px) {
+    .lineProject {
+        width: 480px;
+        left: 130px;
+    }
+
+    .dark-modeContainer-projects .lineProject  {
+        width: 480px;
+        left: 130px;
+    }
+}
+
+@media (max-width: 768px) {
+    .lineProject {
+        width: 420px;
+        left: 130px;
+    }
+
+    .dark-modeContainer-projects .lineProject  {
+        width: 420px;
+        left: 130px;
+    }
+}
+
+@media (max-width: 700px) {
+    .lineProject {
+        width: 380px;
+        left: 130px;
+    }
+
+    .dark-modeContainer-projects .lineProject  {
+        width: 380px;
+        left: 130px;
+    }
+}
+
+@media (max-width: 600px) {
+    .lineProject {
+        width: 250px;
+    }
+
+    .dark-modeContainer-projects .lineProject  {
+        width: 250px;
+    }
+}
+
+@media (max-width: 500px) {
+    .lineProject {
+        width: 100px;
+    }
+
+    .dark-modeContainer-projects .lineProject  {
+        width: 100px;
+    }
 }

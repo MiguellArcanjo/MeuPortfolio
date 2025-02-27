@@ -59,6 +59,25 @@
     flex-grow: 1
 }
 
+.lineAboutMe, .dark-modeTitleAboutMe h2 span {
+    left: 220px;
+    bottom: 7px;
+    position: absolute;
+    height: 2px;
+    opacity: 25%;
+    flex-grow: 1;
+    margin-left: 20px;
+    display: flex;
+}
+
+.lineAboutMe {
+    background-color: #482F68;
+}
+
+.dark-modeTitleAboutMe h2 span {
+    background-color: #ffffff;
+}
+
 .squareWhite {
     height: 24px;
     width: 24px;
@@ -110,7 +129,144 @@
         width: 1500px;
     }
 
-    .dark-modeTitleAboutMe h2 span {
+    .dark-modeTitleAboutMe .lineAboutMe {
         width: 1500px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .lineAboutMe {
+        width: 920px;
+    }
+    
+    .dark-modeTitleAboutMe .lineAboutMe {
+        width: 920px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .lineAboutMe {
+        width: 730px;
+    }
+    
+
+    .dark-modeTitleAboutMe .lineAboutMe {
+        width: 730px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .lineAboutMe {
+        width: 700px;
+    }
+    
+
+    .dark-modeTitleAboutMe .lineAboutMe {
+        width: 700px;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .lineAboutMe {
+        width: 550px;
+    }
+    
+
+    .dark-modeTitleAboutMe .lineAboutMe {
+        width: 550px;
+    }
+
+    .titleAboutMe h2 {
+        color: #22004B;
+        font-weight: bold;
+        position: relative;
+        font-size: 40px;
+        margin-left: 10PX;
+    }
+}
+
+
+
+@media (max-width: 900px) {
+
+    .titleAboutMe h2 {
+        font-size: 30px;
+    }
+    
+    .dark-modeTitleAboutMe h2 {
+        font-size: 30px;
+    }
+
+    .lineAboutMe {
+        width: 530px;
+        left: 150px;
+    }
+    
+    .dark-modeTitleAboutMe .lineAboutMe {
+        width: 530px;
+        left: 150px;
+    }
+
+    .paragrafoAboutMe {
+        font-size: 15px;
+    }
+
+    .dark-modeParagrafoAboutMe {
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .lineAboutMe {
+        width: 450px;
+        left: 150px;
+    }   
+
+    .dark-modeTitleAboutMe .lineAboutMen {
+        width: 450px;
+        left: 150px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .lineAboutMe {
+        width: 400px;
+    }
+
+    .dark-modeTitleAboutMe .lineAboutMe {
+        width: 400px;
+    }
+}
+
+@media (max-width: 700px) {
+    .lineAboutMe {
+        width: 350px;
+    }
+
+    .dark-modeTitleAboutMe .lineAboutMe {
+        width: 350px;
+    }
+}
+
+@media (max-width: 600px) {
+    .lineAboutMe {
+        width: 250px;
+    }
+
+    .dark-modeTitleAboutMe .lineAboutMe {
+        width: 250px;
+    }
+}
+
+@media (max-width: 500px) {
+    .lineAboutMe {
+        width: 100px;
+    }
+
+    .dark-modeTitleAboutMe .lineAboutMe {
+        width: 100px;
     }
 }

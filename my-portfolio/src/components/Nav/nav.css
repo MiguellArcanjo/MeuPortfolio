@@ -117,3 +117,33 @@
     overflow: none;
 }
 
+
+@media (max-width: 900px) {
+    .dark-modeTitle {
+        font-size: 15px;
+        margin-left: 15px;
+    }
+
+    .titleNav {
+        font-size: 15px;
+        margin-left: 15px;
+    }
+
+    .buttonChangeColorBg {
+        height: 23px;
+    }
+
+    .dark-modeButton {
+        height: 23px;
+    }
+
+    .ballChangeColor {
+        width: 15px;
+        height: 15px;
+    }
+
+    .dark-modeBall {
+        width: 15px;
+        height: 15px;
+    }
+}

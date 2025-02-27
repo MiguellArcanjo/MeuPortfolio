@@ -116,3 +116,123 @@
         width: 1550px;
     }
 }
+
+
+
+@media (max-width: 1300px) {
+    .lineContact {
+        width: 730px;
+    }
+    
+    .dark-modeContainer-contact .lineContact {
+        width: 730px;
+    }
+
+
+    .dark-modeTitleAboutMe h2 span {
+        width: 900px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .lineContact {
+        width: 700px;
+    }
+
+    .dark-modeContainer-contact .lineContact {
+        width: 700px;
+    }
+    
+
+    .dark-modeTitleAboutMe h2 span {
+        width: 700px;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .lineContact {
+        width: 550px;
+    }
+
+    .dark-modeContainer-contact .lineContact {
+        width: 550px;
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    .titleContact h2 {
+        font-size: 30px;
+    }
+
+    .dark-modeContainer-contact .titleContact  h2 {
+        font-size: 30px;
+    }
+
+    .lineContact {
+        right: 150px;
+    }
+
+    .dark-modeContainer-contact .lineContact {
+        right: 150px;
+    }
+
+    .containerContacts div img {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .lineContact {
+        width: 450px;
+    }   
+
+    .dark-modeContainer-contact .lineContact {
+        width: 450px;
+    }
+}
+
+@media (max-width: 768px) {
+    .lineContact {
+        width: 400px;
+    }
+
+    .dark-modeContainer-contact .lineContact {
+        width: 400px;
+    }
+}
+
+@media (max-width: 700px) {
+    .lineContact {
+        width: 350px;
+    }
+
+    .dark-modeContainer-contact .lineContact {
+        width: 350px;
+    }
+}
+
+@media (max-width: 600px) {
+    .lineContact {
+        width: 250px;
+    }
+
+    .dark-modeContainer-contact .lineContact {
+        width: 250px;
+    }
+}
+
+@media (max-width: 500px) {
+    .lineContact {
+        width: 130px;
+    }
+
+    .dark-modeContainer-contact .lineContact {
+        width: 130px;
+    }
+    
+}

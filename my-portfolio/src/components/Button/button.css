@@ -109,6 +109,17 @@
     z-index: 1;
 }
 
+.OverlayContainerButtonForLeft {
+    position: relative;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+    top: -1px;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+
 .containerButton p {
     font-size: 1rem;
     font-weight: bold;
@@ -138,6 +149,16 @@
 }
 
 .dark-modeContainerButtonForLeft p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    position: relative;
+    left: 6px;
+    top: 2px;
+    transition: color 0.3s ease;
+}
+
+.OverlayContainerButtonForLeft p {
     font-size: 1rem;
     font-weight: bold;
     color: #fff;
@@ -240,6 +261,20 @@
     transform: rotate(-215deg);
 }
 
+.OverlayContainerButtonForLeft:hover .dark-modeleftForLeft{
+    background-color: transparent;
+    position: absolute;
+    height: 25px;
+    width: 70px;
+    right: 157.3px;
+    top: 30px;
+    display: block;
+    border-left: 26px solid transparent;
+    border-right: 43px solid transparent;
+    border-bottom: 30px solid #fff;
+    transform: rotate(-217deg);
+}
+
 .containerButtonForLeft:hover .rightForLeft {
     right: 176px;
     top: 13.7px;
@@ -251,6 +286,16 @@
 }
 
 .dark-modeContainerButtonForLeft:hover .dark-modeRightForLeft {
+    right: 176px;
+    top: 13.7px;
+    display: block;
+    background-color: #fff; 
+    width: 95%;
+    transform: translateX(100%);
+    z-index: 1;
+}
+
+.OverlayContainerButtonForLeft:hover .dark-modeRightForLeft {
     right: 176px;
     top: 13.7px;
     display: block;
@@ -279,6 +324,59 @@
     z-index: 1;
 }
 
+.OverlayContainerButtonForLeft:hover p {
+    color: #22004B; 
+    z-index: 1;
+}
+
 .contatoButton {
     text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .bgButton p {
+        font-size: 15px;
+    }
+
+    .left, .dark-modeleft {
+        right: 180px;
+    }
+    
+    .top, .dark-modeTop {
+        width: 220px;
+    }
+    
+    .bottom, .dark-modeBottom {
+        width: 169px;
+    }
+
+    
+    .topForLeft, .dark-modeTopForLeft {
+        height: 2px;
+        width: 161px;
+        right: 14px;
+        top: 12.9px;
+        display: block;
+        border-radius: 50px;
+    }
+    
+    .bottomForLeft, .dark-modeBottomForLeft {
+        height: 2px;
+        width: 212px;
+        right: 14px;
+        bottom: 7.4px;
+        display: block;
+    }
+    
+    .rightForLeft, .dark-modeRightForLeft {
+        height: 38.5px;
+        width: 2px;
+        right: 13px;
+        top: 13.5px;
+        display: block;
+    }
 }

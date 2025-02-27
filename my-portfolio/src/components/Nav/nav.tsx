@@ -29,7 +29,7 @@ export function Nav() {
                     <span className={`stripeBottom ${isDarkMode ? "dark-modeStripeBottom" : ""}`}></span>
                 </div>
 
-                <h1 className={`${isDarkMode ? "dark-modeTitle" : ""}`}>
+                <h1 className={`${isDarkMode ? "dark-modeTitle" : "titleNav"}`}>
                     Miguel Arcanjo - Dev Front-End
                 </h1>
 

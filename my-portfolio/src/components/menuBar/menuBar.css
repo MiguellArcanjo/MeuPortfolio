@@ -60,3 +60,10 @@
     padding-top: 10px;
     padding-bottom: 20px;
 }
+
+@media (max-width: 1400px) {
+    .sideMenu.open {
+        left: 13px;
+        top: 10px;
+    }
+}

@@ -4,7 +4,6 @@
     align-items: center;
     justify-content: space-evenly;
     transition: .5s;
-    /* margin-top: 10px; */
 }
 
 .dark-modeContainerIntroduction {
@@ -76,6 +75,48 @@
     filter: brightness(0) invert(1); 
 }
 
+/* Mobile  */
+
+.containerTopMobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.containerLeftMobile {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerLeftMobile h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #22004B;
+    text-align: center;
+}
+
+
+.containerLeftMobile p {
+    font-size: 1.8rem;
+    font-weight: 200;
+    color: #22004B;
+    text-align: center;
+}
+
+.myName .name {
+    font-weight: bold;
+}
+
+.myName .developer {
+    font-weight: 400;
+}
 
 @keyframes pusle {
     from {
@@ -113,5 +154,78 @@
     .containerBottom img {
         height: 70px;
         width: 70px;
+    }
+}
+
+@media (max-width: 900px) {
+    .containerLeft h1 {
+        font-size: 2.3rem;
+        font-weight: 700;
+        color: #22004B;
+    }
+    
+    .containerRight img {
+        height: 250px;
+        width: 250px;
+    }
+
+}
+
+@media (min-width: 769px) {
+    .containerTopMobile {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .containerTop {
+        display: none;
+    }
+
+    .containerLeft {
+        text-align: center; 
+        gap: 10px; 
+        order: 1; 
+    }
+
+    .containerLeft h1 {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #22004B;
+    }
+
+    .containerTopMobile h1 {
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+
+    .containerTopMobile .dark-modeContainerLeft {
+        text-align: center; 
+        gap: 10px; 
+        order: 1; 
+    }
+
+    .containerRight {
+        margin: 20px 0; 
+    }
+
+    .containerButtonsIntroduction {
+        order: 3; 
+        display: flex;
+        gap: 20px; 
+        align-items: center; 
+        justify-content: center;
+    }
+
+    .containerButtonsIntroduction button {
+        width: 90%; 
+        max-width: 300px; 
+        padding: 10px;
+    }
+
+    .containerRight img {
+        width: 200px; 
+        height: auto;
+        border-radius: 50%; 
     }
 }

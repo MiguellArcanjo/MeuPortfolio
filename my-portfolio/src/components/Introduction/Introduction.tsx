@@ -9,6 +9,26 @@ export function Introduciton() {
 
     return (
         <section className={isDarkMode ? "dark-modeContainerIntroduction" : "container-Introduction"}>
+            <div className="containerTopMobile">
+                <div className={isDarkMode ? "dark-modeContainerLeft" : "containerLeft"}>
+                    <h1>Olá, Seja bem - vindo ao</h1>
+                    <h1>meu <span className={isDarkMode ? "dark-modeHighlight-text" : "highlight-text"}>Portfólio</span>.</h1>
+                    
+                    <div className="containerRight">
+                        <Image src="/myPicture.svg" alt="My Picture" height={400} width={400}/>
+                    </div>
+                    <div className="myName">
+                        <p className="name">Miguel Arcanjo</p>
+                        <p className="developer">Desenvolvedor Front-End</p>
+                    </div>
+                </div>
+
+                <div className="containerButtonsIntroduction">
+                    <ButtonForRight nome="Entre em contato"/>
+                    <ButtonForLeft nome="Baixe meu currículo"/>
+                </div>
+            </div>
+
             <div className="containerTop">
                 <div className={isDarkMode ? "dark-modeContainerLeft" : "containerLeft"}>
                     <h1>Olá, Seja bem - vindo ao</h1>
