@@ -67,3 +67,49 @@
         top: 10px;
     }
 }
+
+@media (min-width: 769px) {
+    .menuHeaderMobile {
+        display: none;
+    }
+
+    .listaMobile {
+        display: none !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .sideMenu.open {
+        left: 8px;
+        top: 10px;
+    }
+
+    .listaMobile {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .menuHeaderMobile {
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .lineMenu img {
+        height: 20px;
+        width: 20px;
+    }
+
+    .menuHeader {
+        display: none;
+    }
+
+    .listaDesktop a {
+        display: none;
+    }
+
+    .listaDesktop div {
+        display: none;
+    }
+}

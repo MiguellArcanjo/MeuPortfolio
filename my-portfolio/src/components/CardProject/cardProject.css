@@ -150,3 +150,53 @@
     gap: 10px;
 }
   
+@media (max-width: 875px) {
+    .overlayHover {
+        justify-content: space-evenly;
+        gap: 50%;
+    }
+
+    .dark-modeOverlayHover {
+        justify-content: space-evenly;
+        gap: 50%;
+    }
+}
+
+@media (max-width: 570px) {
+    .overlayHover {
+        justify-content: space-evenly;
+        gap: 40%;
+    }
+
+    .dark-modeOverlayHover {
+        justify-content: space-evenly;
+        gap: 40%;
+    }
+
+    .icons div img {
+        height: 90px;
+        width: 90px;
+    }
+
+    .icons div h3 {
+        font-size: 40px;
+    }
+
+    .cardProject {
+        position: relative; 
+        width: 100%;
+    }
+}
+
+@media (max-width: 510px) {
+    .overlayHover {
+        justify-content: space-evenly;
+        gap: 20%;
+    }
+
+    .dark-modeOverlayHover {
+        justify-content: space-evenly;
+        gap: 20%;
+    }
+
+}

@@ -236,3 +236,31 @@
     }
     
 }
+
+@media (max-width: 500px) {
+    .lineContact {
+        width: 80px;
+        right: 120px;
+    }
+
+    .dark-modeContainer-contact .lineContact {
+        width: 80px;
+    }
+    
+    .titleContact h2 {
+        font-size: 25px;
+    }
+
+    .dark-modeContainer-contact .titleContact  h2 {
+        font-size: 25px;
+    }
+
+    .containerContacts div img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .containerContacts div a {
+        font-size: 15px;
+    }
+}

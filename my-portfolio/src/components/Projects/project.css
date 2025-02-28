@@ -228,3 +228,22 @@
         width: 100px;
     }
 }
+
+@media (max-width: 400px) {
+    .lineProject {
+        width: 60px;
+    }
+
+    .dark-modeContainer-projects .lineProject  {
+        width: 60px;
+    }
+
+    .dark-modeContainer-projects .titleProject h2 {
+        font-size: 25px;
+    }
+
+    .dark-modeContainer-projects .titleProject h2 {
+        font-size: 25px;
+    }
+
+}

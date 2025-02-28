@@ -56,13 +56,13 @@ export function ButtonForRightProject(props: ButtonsProps) {
 
     return (
         <a href={props.urlRepositorio} className="" target="blank_">
-            <div className="dark-modeContainerButton">
+            <div className="dark-modeContainerButtonOverlay">
                 <div className="bgButton">
                     <span className="dark-modeleft"></span>
                     <span className="dark-modeTop"></span>
                     <span className="dark-modeBottom"></span>
                     <span className="dark-modeRight"></span>
-                    <p>{props.nome}</p>
+                    <p className="nomeOverlay">{props.nome}</p>
                 </div>
             </div>
         </a>

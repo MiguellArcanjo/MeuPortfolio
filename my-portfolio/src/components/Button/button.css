@@ -87,6 +87,16 @@
     z-index: 1;
 }
 
+.dark-modeContainerButtonOverlay {
+    position: relative;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+
 .containerButtonForLeft {
     position: relative;
     padding: 20px;
@@ -130,6 +140,15 @@
 }
 
 .dark-modeContainerButton p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    transition: color 0.3s ease;
+    position: relative; 
+    z-index: 3;
+}
+
+.dark-modeContainerButtonOverlay p {
     font-size: 1rem;
     font-weight: bold;
     color: #fff;
@@ -189,10 +208,20 @@
     display: block;
     background-color: #22004B; 
     width: 90%;
-    transform: translateX(100%);
+    transform: translateX(105%);
+    border-bottom-right-radius: 12px;
 }
 
 .dark-modeContainerButton:hover .dark-modeleft {
+    right: 191px;
+    top: 10px;
+    display: block;
+    background-color: #fff; 
+    width: 90%;
+    transform: translateX(100%);
+}
+
+.dark-modeContainerButtonOverlay:hover .dark-modeleft {
     right: 191px;
     top: 10px;
     display: block;
@@ -218,6 +247,22 @@
 }
 
 .dark-modeContainerButton:hover .dark-modeBottom {
+    background-color: transparent;
+    position: absolute;
+    width: 2%; 
+    transform: rotate(-35deg); 
+    height: 10px; 
+    left: 174.9px; 
+    bottom: 28.9px; 
+    display: block;
+    z-index: 1;
+    border-left: 18px solid transparent;
+    border-right: 44px solid transparent;
+    border-bottom: 30px solid #fff;
+    transition: .0.7s;
+}
+
+.dark-modeContainerButtonOverlay:hover .dark-modeBottom {
     background-color: transparent;
     position: absolute;
     width: 2%; 
@@ -329,6 +374,11 @@
     z-index: 1;
 }
 
+.dark-modeContainerButtonOverlay:hover p {
+    color: #22004B; 
+    z-index: 100;
+}
+
 .contatoButton {
     text-decoration: none;
 }
@@ -337,7 +387,13 @@ a {
     text-decoration: none;
 }
 
+
 @media (max-width: 768px) {
+    
+    .containerButtonForLeft:hover .rightForLeft {
+        width: 81%;
+    }
+    
     .bgButton p {
         font-size: 15px;
     }
@@ -378,5 +434,123 @@ a {
         right: 13px;
         top: 13.5px;
         display: block;
+    }
+
+    .OverlayContainerButtonForLeft .dark-modeTopForLeft { 
+        height: 2px;
+        width: 140px;
+        right: 35px;
+        top: 12.9px;
+        display: block;
+        border-radius: 50px;
+    }
+
+    .OverlayContainerButtonForLeft .dark-modeRightForLeft{
+        height: 38.5px;
+        width: 2px;
+        right: 35px;
+        top: 13.5px;
+        display: block;
+    }
+
+    .OverlayContainerButtonForLeft .dark-modeBottomForLeft{
+        height: 2px;
+        width: 191px;
+        right: 35px;
+        bottom: 7.4px;
+        display: block;
+    }
+
+    .dark-modeContainerButtonOverlay p {
+        font-size: 1rem;
+        font-weight: bold;
+        color: #fff;
+        transition: color 0.3s ease;
+        position: relative; 
+        z-index: 3;
+        left: 50px;
+    }
+
+    .dark-modeContainerButtonOverlay .dark-modeleft {
+        right: 140px;
+    }
+    
+    .dark-modeContainerButtonOverlay .dark-modeTop {
+        width: 180px;
+    }
+    
+    .dark-modeContainerButtonOverlay .dark-modeBottom {
+        width: 130px;
+    }
+}
+
+@media (max-width: 402px) {
+    .OverlayContainerButtonForLeft .dark-modeTopForLeft { 
+        height: 2px;
+        width: 105px;
+        right: 70px;
+        top: 12.9px;
+        display: block;
+        border-radius: 50px;
+    }
+
+    .OverlayContainerButtonForLeft p {
+        font-size: 12px;
+    }
+
+    .OverlayContainerButtonForLeft .dark-modeRightForLeft{
+        height: 34px;
+        width: 2px;
+        right: 70px;
+        top: 13.5px;
+        display: block;
+    }
+
+    .OverlayContainerButtonForLeft .dark-modeBottomForLeft{
+        height: 2px;
+        width: 149px;
+        right: 70px;
+        bottom: 7.4px;
+        display: block;
+    }
+    
+    .OverlayContainerButtonForLeft .dark-modeleftForLeft{
+        height: 58px;
+        width: 2px;
+        right: 196px;
+        top: 1px;
+        display: block;
+        transform: rotate(54deg);
+    }
+
+    .dark-modeContainerButtonOverlay p {
+        font-size: 12px;
+        margin-left: 35px;
+    }
+
+    .dark-modeContainerButtonOverlay .dark-modeleft {
+        height: 33px;
+        right: 105px;
+    }
+    
+    .dark-modeContainerButtonOverlay .dark-modeTop {
+        width: 145px;
+    }
+    
+    .dark-modeContainerButtonOverlay .dark-modeBottom {
+        width: 105px;
+        right: 2px;
+        top: 41px;
+    }
+
+    .dark-modeContainerButtonOverlay .dark-modeRight {
+        
+        height: 55px;
+        width: 2px;
+        right: -19px;
+        top: -1px;
+        border-bottom-right-radius: 10px;
+        display: block;
+        transform: rotate(54deg);
     }
 }

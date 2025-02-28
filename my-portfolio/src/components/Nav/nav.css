@@ -147,3 +147,42 @@
         height: 15px;
     }
 }
+
+@media (max-width: 768px) {
+    
+    .sideMenu {
+        width: 100px;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 400px) {
+    .dark-modeTitle {
+        font-size: 12px;
+        margin-left: 15px;
+    }
+
+    .titleNav {
+        font-size: 12px;
+        margin-left: 15px;
+    }
+
+    .buttonChangeColorBg {
+        height: 20px;
+        width: 50px;
+    }
+
+    .dark-modeButton {
+        height: 23px;
+    }
+
+    .ballChangeColor {
+        width: 12px;
+        height: 12px;
+    }
+
+    .dark-modeBall {
+        width: 15px;
+        height: 15px;
+    }
+}

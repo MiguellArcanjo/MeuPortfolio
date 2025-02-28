@@ -270,3 +270,28 @@
         width: 100px;
     }
 }
+
+@media (max-width: 400px) {
+    .lineAboutMe {
+        width: 60px;
+        left: 125px;
+    }
+
+    .dark-modeTitleAboutMe .lineAboutMe {
+        width: 60px;
+        left: 125px;
+    }
+
+    .titleAboutMe h2 {
+        font-size: 25px;
+    }
+    
+    .dark-modeTitleAboutMe h2 {
+        font-size: 25px;
+    }
+
+    .paragrafoAboutMe {
+        font-size: 13px;
+    }
+
+}

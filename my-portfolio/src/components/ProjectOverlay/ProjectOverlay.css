@@ -10,13 +10,17 @@
     align-items: center;
     z-index: 1000;
     border-radius: 20px;
-    border: 4px solid #22004B;
-}
-
-.modal-overlay {
-    border-radius: 20px;
+    border: 4px solid #22004B; 
     overflow: hidden;
 }
+
+.modal-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 
 .close-button {
     position: absolute;
@@ -26,10 +30,11 @@
     border: none;
     font-size: 20px;
     cursor: pointer;
+    font-weight: bold;
+    color: #FFF;
 }
 
 .overlayEsq, .overlayDir {
-    border-radius: 20px;
     overflow: hidden; 
 }
 
@@ -98,9 +103,8 @@
 
 .img3 {
     position: relative;
-    right: 60px;
+    right: 80px;
 }
-
 
 .containerOverlayEsqBottom img {
     height: 60px;
@@ -142,4 +146,346 @@
     color: #22004B;
     font-weight: bold;
     font-size: 13px;
+}
+
+@media (max-width: 1400px) {
+    video {
+        width: 800px;
+    }
+
+    .containerOverlayEsqBottom {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: end;
+    }
+    
+    .containerOverlayEsqBottom div {
+        display: flex;
+        align-items: center;
+    }
+    
+    .div1 {
+        margin-left: 80px;
+        gap: 25px;
+    }
+
+    .code {
+        color: #fff;
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 1250px) {
+    video {
+        width: 700px;
+    }
+
+    .containerOverlayEsqBottom {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: end;
+    }
+    
+    .containerOverlayEsqBottom div {
+        display: flex;
+        align-items: center;
+    }
+    
+    .div1 {
+        margin-left: 80px;
+        gap: 25px;
+    }
+
+    .div2 {
+        display: flex;
+        gap: 40px;
+    }
+
+    .div2 img {
+        height: 60px;
+        width: 60px;
+    }
+
+    .code {
+        color: #fff;
+        font-size: 25px;
+    }
+    
+}
+
+@media (max-width: 1100px) {
+    video {
+        width: 600px;
+    }
+
+    .containerOverlayEsqBottom {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: end;
+    }
+    
+    .containerOverlayEsqBottom div {
+        display: flex;
+        align-items: center;
+    }
+    
+    .div1 {
+        position: relative;
+        left: 20px;
+        margin-left: 90px;
+        gap: 25px;
+    }
+
+    .div2 {
+        display: flex;
+        gap: 40px;
+        margin-right: 30px;
+    }
+
+    .div2 img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .code {
+        position: relative;
+        left: 20px;
+        color: #fff;
+        font-size: 25px;
+    }
+    
+    .aboutProject p {
+        font-size: 15px;
+    }
+
+    .containerFooterProjectOverlay {
+        margin-right: 30px;
+    }
+}
+
+@media (min-width: 1001px) {
+    .modal-overlayMobile {
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    .modal-overlay {
+        display: none;
+    }
+
+    .modal-overlayMobile {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 680px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        border-radius: 20px;
+        border: 4px solid #22004B; 
+        background: #22004B;
+        overflow: hidden;
+        flex-direction: column; 
+    
+    }
+
+    .overlayEsq {
+        width: 100%;
+        height: 120%;
+        border-radius: 20px 20px 0 0; 
+    }
+
+    .overlayDir {
+        width: 100%; 
+        background-color: #FFF;
+        border-radius: 0 0 20px 20px; 
+        padding: 20px; 
+        justify-content: start;
+    }
+
+    .testetste {
+        height: auto; 
+    }
+
+    .testetste video {
+        width: 500px; 
+        margin: 20px auto;
+        height: 200px; 
+    }
+
+    .containerOverlayEsqBottom {
+        flex-direction: column; 
+        gap: 20px; 
+        align-items: center;
+        margin-bottom: 60px;
+        margin-left: -30px;
+    }
+
+    .div1 {
+        gap: 25px; 
+        margin: 0 auto;
+    }
+
+    .div2 {
+        right: 0;
+        gap: 80px; 
+    }
+
+    .div2 img {
+        right: 0;
+        height: 60px;
+        width: 60px; 
+    }
+
+    .code {
+        font-size: 20px; 
+        left: 0;
+    }
+
+    .dateProject {
+        border-right: 1px solid #22004B;
+        padding: 20px; 
+    }
+
+    .divTitleProjectOverlay {
+        display: flex;
+        margin: 0 auto;
+        font-size: 30px;
+        color: #22004B;
+        font-weight: bold;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .aboutProject {
+        text-align: justify;
+        padding: 20px;
+    }
+    
+    .containerFooterProjectOverlay {
+        margin: 0 auto;
+        justify-content: center;
+        gap: 30px;
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+        /* border: 1px solid red; */
+        margin-right: 150px;
+        margin-top: 10px;
+    }
+
+    .containerFooterProjectOverlay div {
+        display: flex;
+    }
+
+    .colaboradores img {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@media (max-width: 550px) {
+    .divTitleProjectOverlay {
+        font-size: 25px;
+    }
+
+    .aboutProject p {
+        font-size: 13px;
+    }
+
+    .containerFooterProjectOverlay {
+        margin: 0 auto;
+        justify-content: center;
+        gap: 30px;
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+        margin-right: 120px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 485px) {
+    .testetste video {
+        width: 340px; 
+        height: 200px; 
+    }
+
+    .containerOverlayEsqBottom {
+        margin-bottom: 60px;
+        margin-left: -50px;
+    }
+} 
+
+@media (max-width: 445px) {
+
+    .testetste video {
+        width: 290px; 
+        height: 200px; 
+    }
+
+    .aboutProject p {
+        font-size: 10px;
+    }
+
+    .dateProject {
+        border-right: 1px solid #22004B;
+        padding: 20px; 
+        font-size: 10px;
+    }
+
+    .containerFooterProjectOverlay {
+        margin-right: 80px;
+    }
+
+}
+
+@media (max-width: 430px) {
+    .testetste video {
+        width: 290px; 
+        height: 200px; 
+    }
+
+    .containerOverlayEsqBottom {
+        margin-bottom: 60px;
+        margin-left: -70px;
+    }
+
+    
+}
+
+@media (max-width: 402px) {
+    .containerOverlayEsqBottom {
+        margin-bottom: 60px;
+        margin-left: -80px;
+    }
+
+    .containerFooterProjectOverlay {
+        margin: 0 auto;
+        justify-content: center;
+        gap: 30px;
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+        /* border: 1px solid red; */
+        margin-right: 80px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 375px) {
+    .containerOverlayEsqBottom {
+        margin-bottom: 60px;
+        margin-left: -90px;
+    }
+
+    .containerFooterProjectOverlay {
+        margin-right: 80px;
+    }
 }

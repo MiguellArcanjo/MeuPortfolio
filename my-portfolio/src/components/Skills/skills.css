@@ -391,3 +391,24 @@
         width: 100px;
     }
 }
+
+@media (max-width: 400px) {
+    .lineSkills {
+        width: 60px;
+        right: 145px;
+    }
+
+    .dark-modeTitleSkills .lineSkills {
+        width: 60px;
+        right: 145px;
+    }
+
+    .titleSkills h2 {
+        font-size: 25px;
+    }
+
+    .dark-modeTitleSkills h2 {
+        font-size: 25px;
+    }
+
+}

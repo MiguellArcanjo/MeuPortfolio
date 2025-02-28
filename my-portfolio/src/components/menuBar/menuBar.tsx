@@ -3,7 +3,7 @@ import "./menuBar.css"
 
 interface LineMenuProps {
     icon: string;
-    nome: string;
+    nome?: string;
     href?: string;
     closeMenu: () => void;
 }
@@ -25,6 +25,20 @@ const LineMenu = (props: LineMenuProps) => {
 export function MenuBar({ closeMenu }: MenuBarProps) {
     return (
         <div>
+            <div className="menuHeaderMobile">
+                <div>
+                    <Image src={"/fotoPerfilNormal.svg"} alt="Foto Perfil" height={50} width={50}/>
+                </div>
+            </div>
+            <ul className="listaMobile">
+                <LineMenu icon="/iconMenuSobre.svg"  href="#aboutMe" closeMenu={closeMenu}/>
+                <LineMenu icon="/iconMenuPlay.svg" href="#skills" closeMenu={closeMenu}/>
+                <LineMenu icon="/iconMenuProjetos.svg" href="#projetos" closeMenu={closeMenu}/>
+                <LineMenu icon="/iconMenuLinkedin.svg" closeMenu={closeMenu} href="https://www.linkedin.com/in/miguel-arcanjob/"/>
+                <LineMenu icon="/iconMenuGithub.svg" closeMenu={closeMenu} href="https://github.com/MiguellArcanjo"/>
+                <LineMenu icon="/iconMenuTelefone.svg" closeMenu={closeMenu}/>
+            </ul>
+
             <div className="menuHeader">
                 <div>
                     <Image src={"/fotoPerfilNormal.svg"} alt="Foto Perfil" height={50} width={50}/>
@@ -34,7 +48,7 @@ export function MenuBar({ closeMenu }: MenuBarProps) {
                     <p>Desenvolvedor Front-End</p>
                 </div>
             </div>
-            <ul>
+            <ul className="listaDesktop">
                 <LineMenu icon="/iconMenuSobre.svg" nome="Sobre Mim" href="#aboutMe" closeMenu={closeMenu}/>
                 <LineMenu icon="/iconMenuPlay.svg" nome="Habilidades" href="#skills" closeMenu={closeMenu}/>
                 <LineMenu icon="/iconMenuProjetos.svg" nome="Projetos" href="#projetos" closeMenu={closeMenu}/>
