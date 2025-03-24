@@ -64,8 +64,8 @@ export function Skills() {
                     <Image src={"/github.svg"} alt="Icone Github" height={130} width={130}/>
                     <p>GitHub</p>
                 </div>
-                <div className="icon">
-                    <Image src={"/pg.svg"} alt="Icone Postgres" height={130} width={130}/>
+                <div className="iconPg">
+                    <Image src={"/logo postgree.svg"} alt="Icone Postgres" height={130} width={130}/>
                     <p>PostgreSQL</p>
                 </div>
                 <div className="icon">

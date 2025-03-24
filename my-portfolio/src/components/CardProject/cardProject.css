@@ -10,8 +10,15 @@
     transition: all 0.5s ease; 
 }
 
-.teste {
+.studi {
     background-image: url("/Pagina principal.png");
+}
+
+.chatio {
+    background-image: url("/capaProjetoChat.png");
+}
+
+.teste {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -22,7 +29,6 @@
 }
 
 .testeDark {
-    background-image: url("/Pagina principal.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

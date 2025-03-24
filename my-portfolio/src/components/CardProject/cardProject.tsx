@@ -1,12 +1,13 @@
 import Image from "next/image";
 import { useTheme } from "@/Context/ThemeContext.js"
 import "./cardProject.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ProjectOverlay } from "../ProjectOverlay/ProjectOverlay";
 
 interface CardProjectProps {
     nome: string;
     imgBackGround: string;
+    data: string;
     icon1?: string;
     icon2?: string;
     icon3?: string;
@@ -20,6 +21,7 @@ interface CardProjectProps {
 export function CardProject(props: CardProjectProps) {
     const { isDarkMode } = useTheme();
     const [ isOverlayOpen, setIsOverlayOpen ] = useState(false);
+    const [nameTeste, setNameTest] = useState("");
 
     const handleOpenOverlay = () => {
         setIsOverlayOpen(true);
@@ -28,10 +30,17 @@ export function CardProject(props: CardProjectProps) {
     const handleCloseOverlay = () => {
         setIsOverlayOpen(false);
     };
-        
+    
+    const changeClass = () => {
+        isDarkMode ? setNameTest("testeDark") : setNameTest("teste")
+    }
+
+    useEffect(() => {
+        changeClass();
+    }, [isDarkMode]);
 
     return (
-        <div className={`cardProject ${props.imgBackGround}`}>
+        <div className={`cardProject ${nameTeste} ${props.imgBackGround}`}>
             <div className="icons">
                 <div>
                     {props.icon1 && (
@@ -52,7 +61,7 @@ export function CardProject(props: CardProjectProps) {
                 </div>
             </div>
             <div className={`${isDarkMode ? "dark-modeOverlayHover" : "overlayHover"}`}>
-                <div>25 de Abril / 2024</div>
+                <div>{props.data}</div>
                 <div className="verMais" onClick={handleOpenOverlay}>
                     Ver mais
                     <Image src={isDarkMode ? "/iconMenuPlay.svg" : "/playIcon.svg"} alt="Icone de play" height={20} width={20} />
